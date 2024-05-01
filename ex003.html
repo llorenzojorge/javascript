@@ -14,9 +14,13 @@
     <h1>Hello, world</h1>
     <p>Já me livrei da maldição!!!</p>
     <script>
-        var n1 = window.prompt('Digite um número: ')
-        var n2 = window.prompt('Digite outro número: ')
-        var s = n1 + n2
+        var num1 = Number(window.prompt('Digite um número: ')) // String
+        var num2 = Number(window.prompt('Digite outro número: ')) // String
+        var soma = num1 + num2
+        // window.alert("O resultado da soma é de: " + String(s)) // Concatenação
+        window.alert(`O resultado da soma entre ${num1} e ${num2} é de ${soma}`) // template string
+        // (number + number) para adição
+        // (string + string) para concatenação
     </script>
 </body>
 </html>
