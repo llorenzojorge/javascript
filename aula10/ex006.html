@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        #area {
+            font: normal 20pt arial;
+            background-color: rgb(112, 199, 112);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        Interaja...
+    </div>
+    
+    <script>
+        var are = window.document.getElementById('area')
+        are.addEventListener('click', clicar)
+        are.addEventListener('mouseenter', entrar)
+        are.addEventListener('mouseout', sair)
+
+
+        function clicar() {
+            are.innerText = 'Clicou!'
+            are.style.background = 'red'
+        }
+        function entrar() {
+            are.innerText = 'Entrou!'
+        }
+        function sair() {
+            are.innerText = 'Saiu!'
+            are.style.background = 'rgb(112, 199, 112)'
+        }
+    </script>
+</body>
+</html>
