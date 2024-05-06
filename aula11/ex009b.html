@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    Informe o seu país: <input type="text" name="pais" id="inputpais">
+    <input type="button" value="Confirmar" onclick="nacionalidade()">
+    <div id="res">
+        <!--Resposta do JavaScript-->
+    </div>
+    
+    <script>
+        function nacionalidade() {
+            var planeta = document.getElementById('inputpais').value
+            var respo = document.querySelector('div#res')
+            respo.innerHTML = `<p>O seu país de origem é: ${planeta}</p>`
+            
+            if (planeta != 'brasil') {
+                respo.innerHTML += `Uau, você é um estrangeiro!!`
+            }
+            else {
+                respo.innerHTML += `AQUI É BRASIL RAPAZ!!`
+            }
+        }
+    </script>
+</body>
+</html>
