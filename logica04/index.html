@@ -6,6 +6,41 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div id="container">
+        <p>Encontre o maior entre os 2 números! (Desafio de lógica usando JavaScript)</p>
+         <p>
+           <label for="valor">Valor 1:</label>
+           <input type="text" name="valor" id="valor">
+        </p>
+         <p>
+            <label for="valor2">Valor 2:</label>
+            <input type="text" name="valor" id="valor2">
+        </p>
+        <p>
+            <input type="button" value="Clicar" onclick="descobrir()">
+        </p>
+    </div>
+    <div id="res">
+        <!--Vou mostrar o resultado das somas aqui-->
+    </div>
+
+    <script>
+        function descobrir() {
+            // Pegando os dados do input e da div
+            var valor1String = document.getElementById('valor').value
+            var valor2String = document.getElementById('valor2').value
+            var resultado = document.getElementById('res')
+
+            // Transformando os dados da input de String para Number
+            var valor1 = Number(valor1String)
+            var valor2 = Number(valor2String)
+
+            if(valor1 > valor2){
+                resultado.innerHTML = 'O valor 1 é maior'
+            } else {
+                alert('O valor 2 é maior')
+            }
+        }
+    </script>
 </body>
 </html>
