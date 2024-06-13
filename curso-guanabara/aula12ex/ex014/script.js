@@ -3,6 +3,7 @@ function carregar() {
     let msg = document.getElementById('msg');
     let divImg = document.getElementById('foto');
     let img = document.getElementById('imagem');
+    let paragrafo = document.createElement('p');
 
     // Importando as horas atuais.
     let data = new Date();
@@ -11,21 +12,28 @@ function carregar() {
     
     // Configurando a msg adequada pra cada horario.
     msg.innerHTML = `Agora são ${hora}:${minutos}m`
+
     // Bom dia:
     if (hora >= 5 && hora < 12) {
         img.src = 'manha.png';
         document.body.style.background = '#19100B';
+        paragrafo.textContent = 'Bom dia!'
     } else {
+
     // Boa tarde:
         if (hora >= 12 && hora < 18) {
             img.src = 'tarde.png';
             document.body.style.background = '#B9846F';
+            paragrafo.textContent = 'Boa tarde!'
         } else {
+            
     // Bom dia:
             img.src = 'noite.png';
             document.body.style.background = 'gray';
+            paragrafo.textContent = 'Boa noite!'
         }
     }
+    divImg.appendChild(paragrafo);
 }
 
 
