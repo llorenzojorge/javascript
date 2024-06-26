@@ -1,6 +1,8 @@
-let vendedor = 'lucas'
-let salario = parseFloat(500)
-let vendas = parseFloat(1230.30)
+const vendedor = 'João'
+const salario = parseFloat(500)
+const vendas = parseFloat(1230.30)
 
-let comissao15 = (vendas % 0.15)
-console.log(comissao15 + salario)
+const comissao15 = vendas * 0.15;
+const salarioTotal = comissao15 + salario;
+
+console.log('TOTAL = R$ ' +salarioTotal.toFixed(2));
