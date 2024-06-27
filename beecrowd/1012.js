@@ -1,12 +1,14 @@
 var input = require('fs').readFileSync('/dev/stdin', 'utf8');
 var lines = input.split('\n');
 
-const A = parseFloat(lines[0]);
-const B = parseFloat(lines[0]);
-const C = parseFloat(lines[0]);
+let entrada = lines[0]; // string = '3.0 4.0 5.2'
+let entradaPartes = entrada.split(' '); // ['3.0, 4.0, 5.2']
+
+const A = parseFloat(entradaPartes[0]); // Number 3.0
+const B = parseFloat(entradaPartes[1]); // Number 4.0
+const C = parseFloat(entradaPartes[2]); // Number 5.2
 
 const pi = 3.14159;
-
 const triangulo = (A*C) / 2;
 const circulo = pi * (Math.pow(C, 2));
 const trapezio = ((A+B) * C) / 2;
