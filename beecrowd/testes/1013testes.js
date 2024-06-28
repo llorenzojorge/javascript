@@ -1,4 +1,4 @@
-const entrada = '7 14 106';
+const entrada = '7 106 14';
 const entradaPartes = entrada.split(' ');
 const n1 = parseInt(entradaPartes[0]);
 const n2 = parseInt(entradaPartes[1]);
@@ -9,28 +9,8 @@ let maior = n1;
 if (n2 > n1) {
     maior = n2;
 }
-if (n3 > n2 || n3 > n1) {
+if (n3 > maior) {
     maior = n3;
 }
 
 console.log(`${maior} eh o maior`);
-
-
-
-
-
-
-
-
-
-
-// let n1 = 10
-// let n2 = 15
-// let n3 = 9
-// let maior = n1
-
-// if (n2 > n1) {
-//     maior = n2
-// }
-
-// console.log(maior)
