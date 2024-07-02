@@ -1,16 +1,22 @@
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+
+let entrada = parseInt(lines[0]);
+
 function data(totalDias) {
-    let ano = Math.floor(totalDias / 360);
-    let mes = Math.floor(totalDias / 30);
-    let dias = Math.floor(totalDias / 12);
+    let ano = Math.floor(totalDias / 365);
+    let anoResto = Math.floor(totalDias % 365);
+    let mes = Math.floor(anoResto / 30);
+    let mesResto = Math.floor(anoResto % 30);
 
     return {
         ano: ano,
         mes: mes,
-        dias: dias
+        dias: mesResto
     }
 }
 
-let teste = data(400);
-console.log(`${teste.ano} anos`);
-console.log(`${teste.mes} meses`);  
-console.log(`${teste.dias} dias`);
+let resultado = data(entrada);
+console.log(`${resultado.ano} ano(s)`);
+console.log(`${resultado.mes} mes(es)`);  
+console.log(`${resultado.dias} dia(s)`);
