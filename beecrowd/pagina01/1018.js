@@ -1,5 +1,6 @@
-const nmr = parseInt(1257);
+const nmr = parseInt(11257);
 function separacaoDeNotas(valor) {
+
     const nota100 = Math.floor(valor / 100);
     const resto100 = Math.floor(valor % 100);
 
@@ -30,6 +31,7 @@ function separacaoDeNotas(valor) {
 }
 
 const res = separacaoDeNotas(nmr);
+console.log(`${nmr}`)
 console.log(`${res.n100} nota(s) de R$ 100,00`);
 console.log(`${res.n50} nota(s) de R$ 50,00`);
 console.log(`${res.n20} nota(s) de R$ 20,00`);
