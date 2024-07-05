@@ -1,4 +1,4 @@
-const entrada = '9.0 4.0 8.5 9.0';
+const entrada = lines[0];
 const entradaPartes = entrada.split(' ');
 
 const n1 = parseFloat(entradaPartes[0]);
@@ -21,7 +21,7 @@ if (media >= 7.0) {
     console.log('Aluno reprovado.');
 } else {
     console.log('Aluno em exame.');
-    let notaExame = parseFloat(6.4);
+    let notaExame = parseFloat(lines[1]);
     let mediaFinal = (notaExame + media) / 2;
     console.log(`Nota do exame: ${notaExame.toFixed(1)}`);
     if (mediaFinal >= 5.0) {
