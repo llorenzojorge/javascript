@@ -1,13 +1,42 @@
-const entrada = '6.0 4.0 2.0';
+const entrada = lines[0];
 const entradaPartes = entrada.split(' ');
-const A = parseFloat(entradaPartes[0]);
-const B = parseFloat(entradaPartes[1]);
-const C = parseFloat(entradaPartes[2]);
+const n1 = parseInt(entradaPartes[0]);
+const n2 = parseInt(entradaPartes[1]);
+const n3 = parseInt(entradaPartes[2]);
 
-if (A + B > C && A + C > B && B + C > A) {
-    let perimetro = A + B + C;
-    console.log(`Perimetro = ${perimetro.toFixed(1)}`);
+let maior, menor, meio;
+
+// Determinando o menor
+if (n1 < n2 && n1 < n3) {
+    menor = n1;
+} else if (n2 < n1 && n2 < n3) {
+    menor = n2;
 } else {
-    let area = ((A + B) * C) / 2;
-    console.log(`Area = ${area.toFixed(1)}`);
+    menor = n3;
 }
+
+// Determinando o maior
+if (n1 > n2 && n1 > n3) {
+    maior = n1;
+} else if (n2 > n1 && n2 > n3) {
+    maior = n2;
+} else {
+    maior = n3;
+}
+
+// Determinando o meio
+if ((n1 > menor && n1 < maior) || (n1 < menor && n1 > maior)) {
+    meio = n1;
+} else if ((n2 > menor && n2 < maior) || (n2 < menor && n2 > maior)) {
+    meio = n2;
+} else {
+    meio = n3;
+}
+
+console.log(menor);
+console.log(meio);
+console.log(maior);
+console.log();
+console.log(n1);
+console.log(n2);
+console.log(n3);
