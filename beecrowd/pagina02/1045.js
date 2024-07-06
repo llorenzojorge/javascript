@@ -13,11 +13,6 @@ let A = numeros[0];
 let B = numeros[1];
 let C = numeros[2];
 
-console.log(A)
-console.log(B)
-console.log(C)
-
-
 if (A >= B+C) {
     console.log('NAO FORMA TRIANGULO');
     return;
