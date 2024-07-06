@@ -3,36 +3,19 @@ const entradaPartes = entrada.split(' ');
 const n1 = parseFloat(entradaPartes[0]);
 const n2 = parseFloat(entradaPartes[1]);
 const n3 = parseFloat(entradaPartes[2]);
-let A, B, C;
 
-// Determinando o maior
-if (n1 >= n2 && n1 >= n3) {
-    A = n1;
-} else if (n2 >= n1 && n2 >= n3) {
-    A = n2;
-} else {
-    A = n3;
-}
-// Determinando o menor
-if (n1 <= n2 && n1 <= n3) {
-    C = n1;
-} else if (n2 <= n1 && n2 <= n3) {
-    C = n2;
-} else {
-    C = n3;
-}
-// Determinando o meio
-if ((n1 > C && n1 < A) || (n1 < C && n1 > A)) {
-    B = n1;
-} else if ((n2 > C && n2 < A) || (n2 < C && n2 > A)) {
-    B = n2;
-} else {
-    B = n3;
-}
+let numeros = [n1, n2, n3];
+numeros.sort(function(a, b) {
+    return b - a;
+});
 
-console.log(A, 'MAIOR')
-console.log(B, 'MEIO')
-console.log(C, 'MENOR')
+let A = numeros[0];
+let B = numeros[1];
+let C = numeros[2];
+
+console.log(A)
+console.log(B)
+console.log(C)
 
 
 if (A >= B+C) {
@@ -51,6 +34,6 @@ if (Math.pow(A,2) < Math.pow(B,2) + Math.pow(C,2)) {
 if (A === B && B === C) {
     console.log('TRIANGULO EQUILATERO');
 }
-if ((A === B && B !== C) && (A === C && C !== A)) {
+if ((A === B && A !== C) || (A === C && C !== A) || (B === C && B !== A)) {
     console.log('TRIANGULO ISOSCELES');
 }
