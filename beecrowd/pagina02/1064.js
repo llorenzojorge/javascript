@@ -1,5 +1,11 @@
 // const array = [lines[0], lines[1], lines[2], lines[3], lines[4], lines[5]];
-const array = [7, -5, 6, -3.4, 4.6, 12]
+const n1 = parseFloat(lines[0]);
+const n2 = parseFloat(lines[1]);
+const n3 = parseFloat(lines[2]);
+const n4 = parseFloat(lines[3]);
+const n5 = parseFloat(lines[4]);
+const n6 = parseFloat(lines[5]);
+const array = [n1, n2, n3, n4, n5, n6]
 let nPositivos = [];
 let qtdPositivos = parseInt(0);
 let media = parseFloat(0);
