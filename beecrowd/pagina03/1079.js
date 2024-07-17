@@ -5,20 +5,27 @@ function receberValores(n) {
     let array = [];
 
     // Preparando pesos para a Media Ponderada
-    const peso1 = parseInt(2);
-    const peso2 = parseInt(3);
-    const peso3 = parseInt(5);
+    let peso1 = parseInt(2);
+    let peso2 = parseInt(3);
+    let peso3 = parseInt(5);
     const somaPesos = peso1 + peso2 + peso3;
-    let media = ((n1 * peso1) + (n2 * peso2) + (n3 * peso3)) / somaPesos
 
     // Recebendo e armazenando os valores novos
     for (let i = 1; i <= n; i++) {
         array.push(lines[i]);
     }
 
-    // Separando os valores e transformando em Number
+    // Separando os valores, transformando em Number e realizando a Media P.
     for (let i = 0; i < n; i++) {
-        
+        let arrayDividida = [];
+        arrayDividida.push(array[i].split(' '));
+
+        let n1 = parseFloat(arrayDividida[0]);
+        let n2 = parseFloat(arrayDividida[1]);
+        let n3 = parseFloat(arrayDividida[2]);
+
+        let media = ((n1 * peso1) + (n2 * peso2) + (n3 * peso3)) / somaPesos;
+        console.log(media)
     }
 }
 
