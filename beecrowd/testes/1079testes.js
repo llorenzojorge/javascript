@@ -19,7 +19,7 @@ function receberValores(n) {
     /*
         O PROBLEMA ESTÁ DAQUI PRA BAIXO:
         -Não estou conseguindo atribuir valor pra n2 e nem n3
-        -Na hora de puxar o arrayDividida[0], eu pretendo pegar só o "6.5", porém ele me retorna "6.5 4.3 6.2"
+        -Na hora de puxar o arrayDividida[0], eu pretendo pegar só o "6.5", porém ele me retorna uma ARRAY, não só os valores de uma array, LITERALMENTE UMA ARRAY ['6.5' '4.3' '6.2']
     */
 
     // Separando os valores, transformando em Number e realizando a Media P.
