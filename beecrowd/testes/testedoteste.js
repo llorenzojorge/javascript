@@ -28,4 +28,4 @@ function separacaoDeNotas(entrada) {
     return moeda50;
 }
 let res = separacaoDeNotas(nmr);
-console.log{res}
+console.log(res)
