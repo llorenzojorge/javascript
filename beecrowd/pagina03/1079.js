@@ -28,7 +28,7 @@ function receberValores(n) {
         console.log(arrayDividida[i])
 
         let n1 = parseFloat(arrayDividida[0]);
-        let n2 = parseFloat(arrayDividida[1]);
+        let n2 = parseFloat(arrayDividida[1]); 
         let n3 = parseFloat(arrayDividida[2]);
 
         // let media = ((n1 * peso1) + (n2 * peso2) + (n3 * peso3)) / somaPesos;
