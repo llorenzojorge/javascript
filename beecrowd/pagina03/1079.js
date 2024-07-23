@@ -16,27 +16,16 @@ function receberValores(n) {
         array.push(lines[i]);
     }
 
-    /*
-        O PROBLEMA ESTÁ DAQUI PRA BAIXO:
-        -Não estou conseguindo atribuir valor pra n2 e nem n3
-        -Na hora de puxar o arrayDividida[0], eu pretendo pegar só o "6.5", porém ele me retorna "6.5 4.3 6.2"
-    */
-
     // Separando os valores, transformando em Number e realizando a Media P.
     for (let i = 0; i < n; i++) {
         arrayDividida.push(array[i].split(' ')); // array[0] = '6.5 4.3 6.2'
-        console.log(arrayDividida[i][0])
-        console.log(arrayDividida[i][1])
-        console.log(arrayDividida[i][2])
 
-        let n1 = parseFloat(arrayDividida[0]);
-        let n2 = parseFloat(arrayDividida[1]); 
-        let n3 = parseFloat(arrayDividida[2]);
+        let n1 = parseFloat(arrayDividida[i][0]);
+        let n2 = parseFloat(arrayDividida[i][1]); 
+        let n3 = parseFloat(arrayDividida[i][2]);
 
-        // let media = ((n1 * peso1) + (n2 * peso2) + (n3 * peso3)) / somaPesos;
-        // console.log(n1)
-        // console.log(n2)
-        
+        let media = ((n1 * peso1) + (n2 * peso2) + (n3 * peso3)) / somaPesos;
+        console.log(media.toFixed(1));
     }
 }
 
