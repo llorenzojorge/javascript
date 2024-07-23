@@ -25,7 +25,9 @@ function receberValores(n) {
     // Separando os valores, transformando em Number e realizando a Media P.
     for (let i = 0; i < n; i++) {
         arrayDividida.push(array[i].split(' ')); // array[0] = '6.5 4.3 6.2'
-        console.log(arrayDividida[i])
+        console.log(arrayDividida[i][0])
+        console.log(arrayDividida[i][1])
+        console.log(arrayDividida[i][2])
 
         let n1 = parseFloat(arrayDividida[0]);
         let n2 = parseFloat(arrayDividida[1]); 
