@@ -1,6 +1,9 @@
-let nI = parseFloat(0);
-let nJ = parseFloat(1);
+let nI = parseInt(0);
+let nJ = parseInt(1);
 
-while (nI !== 2) {
-    
+for (let i = 1; nI < 2.1; i++) {
+    console.log(`I=${nI} J=${nJ}`);
+    console.log(`I=${nI} J=${nJ}`);
+    console.log(`I=${nI} J=${nJ}`);
+    nI = nI * 1 + 0.2
 }
