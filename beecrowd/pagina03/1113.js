@@ -7,7 +7,7 @@ for (let i = 0; i < lines.length; i++) {
         console.log('Decrescente');
     } else if (x < y) {
         console.log('Crescente');
-    } else if (x === y) {
+    } else {
         break;
     }
 }
