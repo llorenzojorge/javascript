@@ -10,14 +10,14 @@ for (let i = 0; i < lines.length; i++) {
     } else if (m > n) { 
         let total = 0;
         for (let j = n; j <= n; j++) {
-            total+=j
+            total += j;
             process.stdout.write(`${j} `)
         }
         console.log(`Sum=${total}`);
     } else if (n > m) {
         let total = 0;
         for (let j = m; j <= m; j++) {
-            total+=j
+            total += j;
             process.stdout.write(`${j} `)
         }
         console.log(`Sum=${total}`)
