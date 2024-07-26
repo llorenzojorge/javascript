@@ -7,9 +7,9 @@ for (let i = 0; i < lines.length; i++) {
 
     if (m <= 0 || n <= 0) {
         break;
-    } else if (m > n) { // 5 > 2 true
+    } else if (m > n) { 
         let total = 0;
-        for (let j = n; j <= n; j++) { // i = 2, 2 <= 5, 2++
+        for (let j = n; j <= n; j++) {
             total+=j
             process.stdout.write(`${j} `)
         }
@@ -23,11 +23,3 @@ for (let i = 0; i < lines.length; i++) {
         console.log(`Sum=${total}`)
     }
 }
-
-// function range(start, end, step = 1) {
-//     const arr = [];
-//     for (let i = start; i < end; i += step) {
-//         arr.push(i);
-//     }
-//     return arr;
-// }
