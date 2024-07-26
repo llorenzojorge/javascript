@@ -9,16 +9,18 @@ for (let i = 0; i < lines.length; i++) {
         break;
     } else if (m > n) { // 5 > 2 true
         let total = 0;
-        for (let i = n; i <= n; i++) { // i = 2, 2 <= 5, 2++
-            total++
-            console.log(`${i} ${total}`);
+        for (let j = n; j <= n; j++) { // i = 2, 2 <= 5, 2++
+            total+=j
+            process.stdout.write(`${j} `)
         }
+        console.log(`Sum=${total}`);
     } else if (n > m) {
         let total = 0;
-        for (let i = m; i <= m; i++) {
-            total++
-            console.log(`${i} ${total}`);
+        for (let j = m; j <= m; j++) {
+            total+=j
+            process.stdout.write(`${j} `)
         }
+        console.log(`Sum=${total}`)
     }
 }
 
