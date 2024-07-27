@@ -3,6 +3,8 @@ for (let i = 0; i < lines.length; i++) {
     if (nota < 0 || nota > 10) {
         console.log('nota invalida');
     } else {
-        
+
     }
 }
+
+// 10 + 3.5 /2 = media 6.75
