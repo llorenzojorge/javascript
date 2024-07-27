@@ -1,4 +1,4 @@
-let lines = [3, '3 -2', '-8 0', '0 8']
+//let lines = [3, '3 -2', '-8 0', '0 8']
 const entrada = lines[0];
 
 for (let i = 1; i <= entrada; i++) {
@@ -8,8 +8,8 @@ for (let i = 1; i <= entrada; i++) {
 
     let divisao = x / y;
     if (!isFinite(divisao)) {
-        console.log('divisao impossivel')
+        console.log('divisao impossivel');
     } else {
-        console.log(divisao)
+        console.log(divisao.toFixed(1));
     }
 }
