@@ -3,7 +3,7 @@ let lines = [-3.5, 10.1, 11.0, 0.1, 0.001,];
 let nota1, nota2, media;
 
 for (let i = 0; i < lines.length; i++) {
-    let nota = lines[i];
+    let nota = parseFloat(lines[i]);
 
     if (nota < 0 || nota > 10) {
         console.log('nota invalida');
