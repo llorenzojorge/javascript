@@ -1,4 +1,5 @@
-let lines = [-3.5, 3.5, 11.0, 10.0];
+// let lines = [-3.5, 3.5, 11.0, 10.0];
+let lines = [-3.5, 10.5, 11.0, 10.0, 5.5, 5];
 let nota1, nota2, media;
 
 for (let i = 0; i < lines.length; i++) {
@@ -8,10 +9,11 @@ for (let i = 0; i < lines.length; i++) {
         console.log('nota invalida');
     } else if (nota1 === undefined) {
         nota1 = lines[i];
-    } else if (nota1 != undefined) {
+    } else if (nota1 !== undefined) {
         nota2 = lines[i];
         media = (nota1 + nota2) / 2;
-        console.log(`media = ${media.toFixed(2)}`)
+        console.log(`media = ${media.toFixed(2)}`);
+        break;
     }
 }
 
