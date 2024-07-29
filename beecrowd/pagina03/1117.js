@@ -1,5 +1,5 @@
 // let lines = [-3.5, 3.5, 11.0, 10.0];
-let lines = [-3.5, 10.5, 11.0, 10.0, 5.5, 5];
+let lines = [-3.5, 10.1, 11.0, 0.1, 0.001,];
 let nota1, nota2, media;
 
 for (let i = 0; i < lines.length; i++) {
