@@ -9,17 +9,20 @@ function tipoCombustivel() {
     for (let i = 0; i < lines.length; i++) {
         entrada = parseInt(lines[i]);
 
-        if (entrada <= 0 || entrada >= 5) {
-            break
-        } else if (entrada === 1) {
+        if (entrada === 1) {
             alcool++
         } else if (entrada === 2) {
             gasolina++
         } else if (entrada === 3) {
             diesel++
-        } else { // entrada: 4
-            break
+        } else if (entrada === 4){ // entrada: 4
+            break;
         }
     }
-    
+    console.log(`MUITO OBRIGADO`);
+    console.log(`Alcool: ${alcool}`);
+    console.log(`Gasolina: ${gasolina}`);
+    console.log(`Diesel: ${diesel}`);
 }
+
+tipoCombustivel()
