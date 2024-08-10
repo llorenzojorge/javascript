@@ -5,9 +5,10 @@ for (let i = 0; i < lines.length; i++) {
         break;
     } else {
         for (let j = 1; j <= x; j++) {
-            process.stdout.write(`${j} `)
             if (j === x) {
                 console.log(`${j}`)
+            } else {
+                process.stdout.write(`${j} `)
             }
         }
     }
